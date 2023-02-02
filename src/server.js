@@ -10,7 +10,7 @@ app.use(cors());
 const apiKey = "3bc498625c324399abae4f472f7fa3af"
 
 //endpoint
-app.get('/news', (req, res) => {
+app.get('/', (req, res) => {
   const userAgent = req.get('user-agent');
 
   const options = {
