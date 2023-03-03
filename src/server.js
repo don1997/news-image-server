@@ -31,8 +31,7 @@ app.get('/', (req, res) => {
 
     response.on('end', () => {
       const newsData = JSON.parse(data);
-      const filteredArticles = newsData.articles.filter(article => article.source.name !== 'Google News');
-      res.json({ articles: filteredArticles });
+      res.json({newsData});
     });
   });
 
